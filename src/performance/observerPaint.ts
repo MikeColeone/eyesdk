@@ -1,8 +1,8 @@
-import { lazyReportBatch } from '../report';
-export default function observerFCP() {
+import { lazyReportBatch } from '../utils/report';
+export default function observerPaint() {
     const entryHandler = (list) => {
         for (const entry of list.getEntries()) {
-            if (entry.name === 'first-contentful-paint') {
+            if (entry.name === 'first-paint') {
                 observer.disconnect();
                 const json = entry.toJSON();
                 console.log(json);
@@ -16,10 +16,12 @@ export default function observerFCP() {
                 lazyReportBatch(reportData);
             }
         }
-
+    
     }
-    // 统计和计算fcp的时间
+    // 统计和计算fp的时间
     const observer = new PerformanceObserver(entryHandler);
     // buffered: true 确保观察到所有paint事件
     observer.observe({type: 'paint', buffered: true});
+    
+    
 }

@@ -1,9 +1,8 @@
-import { lazyReportBatch } from '../report';
-export default function observerLCP() {
-    const entryHandler = (list) => {
-        if (observer) {
-            observer.disconnect();
-        } 
+function observerLCP() {
+    const entryHandler = (list: { getEntries: () => any; }) => {
+        // if (observer) {
+        //     observer.disconnect();
+        // } 
         for (const entry of list.getEntries()) {
             const json = entry.toJSON();
             console.log(json);
@@ -13,8 +12,8 @@ export default function observerLCP() {
                 subType: entry.name,
                 pageUrl: window.location.href,
             }
-            // 发送数据 todo;
-            lazyReportBatch(reportData);
+            // TODO 上报逻辑
+            console.log(reportData)
         }
 
     }
