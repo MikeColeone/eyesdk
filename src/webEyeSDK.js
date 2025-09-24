@@ -62,8 +62,8 @@ export default {
     init,
 } 
 
-// webEyeSDK.init({
-//     appId: '10000',
-//     batchSize: 50,
+webEyeSDK.init({
+    appId: '10000',
+    batchSize: 50,
 
-// })
+})

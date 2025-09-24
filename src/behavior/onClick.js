@@ -6,7 +6,7 @@ export default function onClick() {
             console.log('click', target);
             if (target.tagName) {
                 const reportData = {
-                    // scrollTop: document.documentElement.scrollTop,
+                    scrollTop: document.documentElement.scrollTop,
                     type: 'behavior',
                     subType: 'click',
                     target: target.tagName,
