@@ -1,4 +1,4 @@
-import { lazyReportBatch } from "../report.js";
+import { lazyReportBatch } from "../request/report.js";
 
 /**
  * 资源加载的错误

@@ -1,4 +1,4 @@
-import { lazyReportBatch } from "../report.js";
+import { lazyReportBatch } from "../request/report.js";
 
 /**
  * promise错误追踪

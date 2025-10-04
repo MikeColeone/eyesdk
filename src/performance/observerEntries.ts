@@ -1,4 +1,4 @@
-import { lazyReportBatch } from "../report.js";
+import { lazyReportBatch } from "../request/report.js";
 // 如果页面已经完全加载，则直接启动性能监控。
 // 否则监听 load 事件，确保页面资源加载完之后再启动监控。
 export default function observerEntries() {

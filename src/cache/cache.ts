@@ -1,13 +1,12 @@
-import { deepCopy } from './utils.js';
-
+import { deepCopy } from "../utils/utils.js";
 
 const cache = [];
 export function getCache() {
-    return deepCopy(cache);
+  return deepCopy(cache);
 }
 export function addCache(data) {
-    cache.push(data);
+  cache.push(data);
 }
 export function clearCache() {
-    cache.length = 0;
+  cache.length = 0;
 }

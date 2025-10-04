@@ -1,4 +1,4 @@
-import { lazyReportBatch } from "../report.js";
+import { lazyReportBatch } from "../request/report.js";
 export default function observerPaint() {
   const entryHandler = (list: { getEntries: () => any }) => {
     for (const entry of list.getEntries()) {

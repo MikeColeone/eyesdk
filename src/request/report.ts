@@ -1,6 +1,6 @@
-import config from "./config.js";
-import { generateUniqueId } from "./utils.js";
-import { addCache, getCache, clearCache } from "./cache.js";
+import config from "../config/config.js";
+import { generateUniqueId } from "../utils/utils.js";
+import { addCache, getCache, clearCache } from "../cache/cache.js";
 export const originalProto = XMLHttpRequest.prototype;
 export const originalOpen = XMLHttpRequest.prototype.open;
 export const originalSend = XMLHttpRequest.prototype.send;

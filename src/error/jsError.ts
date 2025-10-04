@@ -1,4 +1,4 @@
-import { lazyReportBatch } from "../report.js";
+import { lazyReportBatch } from "../request/report.js";
 
 export function jsLoadError(): void {
   window.onerror = function (msg, url, lineNo, columnNo, error) {

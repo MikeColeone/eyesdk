@@ -1,5 +1,5 @@
-import { lazyReportBatch } from "../report.js";
-import { generateUniqueId } from "../utils.js";
+import { lazyReportBatch } from "../request/report.js";
+import { generateUniqueId } from "../utils/utils.js";
 export default function pageChange() {
   // hash histroy
   let oldUrl = "";

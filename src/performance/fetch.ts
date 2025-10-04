@@ -1,4 +1,4 @@
-import { lazyReportBatch } from "../report.js";
+import { lazyReportBatch } from "../request/report.js";
 const originalFetch = window.fetch;
 function overwriteFetch() {
   window.fetch = function newFetch(url, config) {
