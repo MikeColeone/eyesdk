@@ -1,7 +1,7 @@
 import { lazyReportBatch } from "../request/report.js";
 
 export default function observerLCP() {
-  const entryHandler = (list: { getEntries: () => any }) => {
+  const entryHandler = (list) => {
     if (observer) {
       observer.disconnect();
     }

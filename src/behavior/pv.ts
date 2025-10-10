@@ -1,5 +1,5 @@
-import { lazyReportBatch } from "../request/report.js";
-import { generateUniqueId } from "../utils/utils.js";
+import { lazyReportBatch } from "../request/report.ts";
+import { generateUniqueId } from "../utils/utils.ts";
 export default function pv() {
   const reportData = {
     type: "behavior",

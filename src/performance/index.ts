@@ -1,10 +1,10 @@
-import fetch from "./fetch";
-import observerEntries from "./observerEntries";
-import observerLCP from "./observeLCP";
-import observerFCP from "./observerFCP";
-import observerLoad from "./observerLoad";
-import observerPaint from "./observerPaint";
-import xhr from "./xhr";
+import fetch from "./fetch.ts";
+import observerEntries from "./observerEntries.ts";
+import observerLCP from "./observeLCP.ts";
+import observerFCP from "./observerFCP.ts";
+import observerLoad from "./observerLoad.ts";
+import observerPaint from "./observerPaint.ts";
+import xhr from "./xhr.ts";
 
 export default function performance() {
   fetch();

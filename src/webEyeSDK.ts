@@ -1,8 +1,8 @@
-import performance from "./performance/index.js";
-import error from "./error/index.js";
-import behavior from "./behavior/index.js";
-import { setConfig } from "./config/config.js";
-import { lazyReportBatch } from "./request/report.js";
+import performance from "./performance/index.ts";
+import error from "./error/index.ts";
+import behavior from "./behavior/index.ts";
+import { setConfig } from "./config/config.ts";
+import { lazyReportBatch } from "./request/report.ts";
 window.__webEyeSDK__ = {
   version: "0.0.1",
 };

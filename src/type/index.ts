@@ -1,3 +1,3 @@
-import type { ClickReport } from "./onClick.js";
+import type { ClickReport } from "./onClick.ts";
 
 export type { ClickReport };

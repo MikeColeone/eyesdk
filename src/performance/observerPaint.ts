@@ -1,6 +1,6 @@
 import { lazyReportBatch } from "../request/report.js";
 export default function observerPaint() {
-  const entryHandler = (list: { getEntries: () => any }) => {
+  const entryHandler = (list) => {
     for (const entry of list.getEntries()) {
       if (entry.name === "first-paint") {
         observer.disconnect();

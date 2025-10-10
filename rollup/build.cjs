@@ -26,9 +26,9 @@ const plugins = [
 module.exports = [
   {
     plugins,
-    input: resolveFile("../src/webEyeSDK.js"),
+    input: resolveFile("../src/webEyeSDK.ts"),
     output: {
-      file: resolveFile("../dist/monitor.js"),
+      file: resolveFile("../dist/monitor.ts"),
       format: "iife",
       name: "monitor",
       sourcemap: true,
@@ -36,9 +36,9 @@ module.exports = [
   },
   {
     plugins,
-    input: resolveFile("../src/webEyeSDK.js"),
+    input: resolveFile("../src/webEyeSDK.ts"),
     output: {
-      file: resolveFile("../dist/monitor.esm.js"),
+      file: resolveFile("../dist/monitor.esm.ts"),
       format: "esm",
       name: "monitor",
       sourcemap: true,
@@ -46,9 +46,9 @@ module.exports = [
   },
   {
     plugins,
-    input: resolveFile("../src/webEyeSDK.js"),
+    input: resolveFile("../src/webEyeSDK.ts"),
     output: {
-      file: resolveFile("../dist/monitor.cjs.js"),
+      file: resolveFile("../dist/monitor.cjs.ts"),
       format: "cjs",
       name: "monitor",
       sourcemap: true,

@@ -1,6 +1,6 @@
-import onClick from "./onClick.js";
-import pageChange from "./pageChange.js";
-import pv from "./pv.js";
+import onClick from "./onClick.ts";
+import pageChange from "./pageChange.ts";
+import pv from "./pv.ts";
 
 export default function behavior() {
   onClick(), pageChange(), pv();

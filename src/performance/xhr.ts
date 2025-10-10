@@ -1,4 +1,4 @@
-import { lazyReportBatch } from "../request/report.js";
+import { lazyReportBatch } from "../request/report.ts";
 export const originalProto = XMLHttpRequest.prototype;
 export const originalSend = originalProto.send;
 export const originalOpen = originalProto.open;

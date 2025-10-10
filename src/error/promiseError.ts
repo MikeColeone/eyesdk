@@ -1,9 +1,9 @@
-import { lazyReportBatch } from "../request/report.js";
+import { lazyReportBatch } from "../request/report.ts";
 
 /**
  * promise错误追踪
  */
-export function promiseError(): void {
+export function promiseError() {
   window.addEventListener(
     "unhandledrejection",
     function (e) {

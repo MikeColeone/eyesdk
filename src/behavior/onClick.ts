@@ -1,5 +1,5 @@
-import { lazyReportBatch } from "../request/report.js";
-import type { ClickReport } from "../type/onClick.js";
+import { lazyReportBatch } from "../request/report.ts";
+import { type ClickReport } from "../type/onClick.ts";
 
 let isInit = false;
 
